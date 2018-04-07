@@ -1,0 +1,4 @@
+language:python xiaomi.com
+language:python mi.com
+language:python mioffice.cn
+language:python xiaomi.srv
