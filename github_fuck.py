@@ -52,7 +52,7 @@ def First_Test(keyword):
         print dictcontent
         keyworddict=ast.literal_eval(dictcontent[0])
         if keyword not in keyworddict:
-            keyworddict[keyword]=""
+            keyworddict[keyword]=temp[0].strip()
             keyworddictfile = open("keywordnumkey.txt", "w")
             keyworddictfile.writelines(str(keyworddict))
             keyworddictfile.close()
@@ -63,6 +63,7 @@ def First_Test(keyword):
             print "false"
             return False
         else:
+            keyworddict[keyword]=temp[0].strip()
             keyworddictfile = open("keywordnumkey.txt", "w")
             keyworddictfile.writelines(str(keyworddict))
             keyworddictfile.close()
